@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="com.prima.dialer" version="1.0.0">
+	<name>Dialer</name>
+	<description>Custom Dialer Plugin</description>
+	<license>MIT</license>
+	<keywords>phonegap,dialer</keywords>
+
+	<js-module src="www/dialer.js" name="Dialer">
+		<clobbers target="window.dialer" />
+	</js-module>
+
+	<!-- android -->
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="Dialer">
+				<param name="android-package" value="com.prima.dialer.Dialer"/>
+			</feature>
+		</config-file>
+
+		<source-file src="src/android/Dialer.java" target-dir="src/com/prima/dialer" />
+	</platform>
+</plugin>
