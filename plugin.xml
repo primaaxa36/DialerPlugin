@@ -6,7 +6,7 @@
 	<keywords>phonegap,dialer</keywords>
 
 	<js-module src="www/dialer.js" name="Dialer">
-		<clobbers target="dialer" />
+		<clobbers target="window.dialer" />
 	</js-module>
 
 	<!-- android -->
