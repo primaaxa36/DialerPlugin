@@ -1,4 +1,4 @@
-package com.prima.dialplugin;
+package com.prima.dialer;
 
 import org.apache.cordova.Config;
 import org.apache.cordova.CallbackContext;
